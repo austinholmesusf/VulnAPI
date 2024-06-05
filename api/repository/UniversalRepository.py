@@ -55,7 +55,7 @@ def is_alive() -> bool:
 T = TypeVar('T')
 
 
-class UniversalRepositoryHelper(Generic[T]):
+class UniversalRepository(Generic[T]):
 
     def __init__(self, cls: T, table_name: str, primary_keys: List[str]):
         self.TABLE_NAME = table_name
