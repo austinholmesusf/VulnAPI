@@ -1,38 +1,40 @@
 Broken Object-Level Authorization
 
-
+  - Alter get_user_data endpoint (api/controller/UserController) by:
+  | > Change retrieved user to be request argument rather than token id
 
 Broken Authentication
 
-
+  - Disable @TokenRequired (api/annotation/TokenRequired) functionality in any way
 
 Broken Object Property Level Authorization
 
-
+  Not Currently Represented
 
 Unrestricted Resource Consumption
 
-
+  Not Currently Represented
 
 Broken Function Level Authorization
 
-
+  - Remove token authentication from endpoints requiring it
 
 Unrestricted Access to Sensitive Business Flows
 
-
+  Not Currently Represented
 
 Server Side Request Forgery
 
-
+  Not Currently Represented
 
 Security Misconfiguration
 
-
+  Not Currently Represented
 
 Improper Inventory Management
 
+  Not Currently Represented
 
 Unsafe Consumption of APIs
 
-
+  Not Currently Represented
