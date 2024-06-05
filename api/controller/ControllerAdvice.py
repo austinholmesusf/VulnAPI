@@ -10,7 +10,7 @@ def configure_controller_advice(app):
         code = 503
         if isinstance(error, EndpointException.EndpointException):
             code = error.http_code
-        elif isinstance(error, BadRequest):
+        elif isinstance(error, BadRequest) or isinstance(error, ValueError):
             code = 400
 
         response = {

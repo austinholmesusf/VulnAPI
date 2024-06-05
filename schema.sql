@@ -1,7 +1,8 @@
 CREATE TABLE IF NOT EXISTS auth (
     user_id TEXT PRIMARY KEY,
     username TEXT,
-    password_hash TEXT
+    password_hash TEXT,
+    permissions_group TEXT
 );
 
 CREATE TABLE IF NOT EXISTS users (
