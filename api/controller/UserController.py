@@ -12,4 +12,3 @@ def configure_user_routes(app: Flask):
         user_data = UserService.get_user(user_id)
         users_serial = vars(user_data)
         return jsonify({'user': users_serial})
-
